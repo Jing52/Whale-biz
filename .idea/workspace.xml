@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ffcd558-9bcf-405a-be95-87cbf4af7d99" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$PROJECT_DIR$/../../../52/apache-maven-3.8.6/repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../52/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../52/apache-maven-3.8.6/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2REciwHyLxCOA2ad17735GtkHBy" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Users/Whale/Jing/WorkSpace/Local/whale-biz/whale-biz-process",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.28653628",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "c3374766365f842d416ec97f65fcf24b",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/whale-biz-process" />
+      <recent name="$PROJECT_DIR$/whale-biz-common/src/main/java/com/whale/framework/common/dto" />
+      <recent name="$PROJECT_DIR$/whale-common/src/main/java/com/whale/framework/common" />
+      <recent name="$PROJECT_DIR$/whale-message/src/main/java/com/whale/framework/message" />
+      <recent name="$PROJECT_DIR$/whale-message" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.whale.framework.common.dto.response" />
+      <recent name="com.whale.framework.common.dto.request" />
+      <recent name="com.whale.framework.common.dto.enums" />
+      <recent name="com.whale.framework.common.utils" />
+      <recent name="com.whale.framework.common.enums" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MagusMessageApplication">
+    <configuration name="MagusMessageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="whale-biz-message" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whale.framework.message.WhaleMessageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WhaleProcessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="whale-biz-process" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whale.framework.process.WhaleProcessApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.WhaleProcessApplication" />
+      <item itemvalue="Spring Boot.MagusMessageApplication" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ffcd558-9bcf-405a-be95-87cbf4af7d99" name="Changes" comment="" />
+      <created>1686818813444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686818813444</updated>
+      <workItem from="1686818816260" duration="2772000" />
+      <workItem from="1686878560691" duration="1015000" />
+      <workItem from="1687850660331" duration="2434000" />
+      <workItem from="1687853343295" duration="4383000" />
+      <workItem from="1687918043355" duration="979000" />
+      <workItem from="1688522452480" duration="7684000" />
+      <workItem from="1688544188478" duration="3955000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
