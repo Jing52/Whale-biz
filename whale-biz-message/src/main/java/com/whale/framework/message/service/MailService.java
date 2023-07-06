@@ -1,6 +1,6 @@
 package com.whale.framework.message.service;
 
-import com.whale.framework.message.dto.req.MailReq;
+import com.whale.framework.message.dto.req.MailRequest;
 
 /**
  * @Description: 邮件发送
@@ -14,11 +14,11 @@ public interface MailService {
      *
      * @param email
      */
-    Boolean sendMail(MailReq email);
+    Boolean sendMail(MailRequest email);
 
     /**
      * 无附件的邮件发送
      * @param email
      */
-    Boolean sendMailWithoutAttachments(MailReq email);
+    Boolean sendMailWithoutAttachments(MailRequest email);
 }

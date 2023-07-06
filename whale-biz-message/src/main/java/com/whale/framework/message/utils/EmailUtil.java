@@ -1,6 +1,6 @@
 package com.whale.framework.message.utils;
 
-import com.whale.framework.message.dto.req.AttachmentReq;
+import com.whale.framework.message.dto.req.AttachmentRequest;
 import jakarta.mail.internet.MimeMessage;
 import jakarta.mail.internet.MimeUtility;
 import lombok.extern.slf4j.Slf4j;
@@ -85,7 +85,7 @@ public class EmailUtil {
      * @author whale on 2023-03-17 22:16
      */
     public static Boolean sendMail(JavaMailSender mailSender, String fromEmail, String[] toEmail, String[] ccEmail,
-                                   String subject, String content, List<AttachmentReq> attachments) {
+                                   String subject, String content, List<AttachmentRequest> attachments) {
         Boolean result = Boolean.TRUE;
         System.setProperty("mail.mime.splitlongparameters", "false");
         MimeMessage message = mailSender.createMimeMessage();

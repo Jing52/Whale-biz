@@ -3,9 +3,9 @@ package com.whale.framework.message.service.impl;
 import com.whale.framework.common.dto.exception.BizServiceException;
 import com.whale.framework.common.dto.response.ResponseCodeEnum;
 import com.whale.framework.common.utils.MapUtil;
-import com.whale.framework.message.dto.req.DingTalkReq;
-import com.whale.framework.message.dto.req.MailReq;
-import com.whale.framework.message.dto.req.WxWorkReq;
+import com.whale.framework.message.dto.req.DingTalkRequest;
+import com.whale.framework.message.dto.req.MailRequest;
+import com.whale.framework.message.dto.req.WxWorkRequest;
 import com.whale.framework.message.enums.DingTalkMsgTypeEnum;
 import com.whale.framework.message.enums.WxWorkMsgTypeEnum;
 import com.whale.framework.message.service.NoticeService;
@@ -39,7 +39,7 @@ public class NoticeServiceImpl implements NoticeService {
     MailService mailService;
 
     @Override
-    public String wxWorkNotice(WxWorkReq wxWork) {
+    public String wxWorkNotice(WxWorkRequest wxWork) {
         if (Objects.isNull(wxWork) || StringUtils.isBlank(wxWork.getMsgType())) {
             throw new BizServiceException(ResponseCodeEnum.ILLEGAL_ARGUMENT.getCode(), ResponseCodeEnum.ILLEGAL_ARGUMENT.getFormatMsg("消息类型不能为空"));
         }
@@ -75,7 +75,7 @@ public class NoticeServiceImpl implements NoticeService {
                     }
                     Map<String, List<Map<String, Object>>> news = new HashMap<>();
 
-                    List<WxWorkReq.WeWorkArticle> articles = wxWork.getNews().getArticles();
+                    List<WxWorkRequest.WeWorkArticleRequest> articles = wxWork.getNews().getArticles();
                     List<Map<String, Object>> articleList = articles.stream().map(link -> {
                         Map<String, Object> map = new HashMap<>();
                         BeanUtils.copyProperties(link, map);
@@ -95,7 +95,7 @@ public class NoticeServiceImpl implements NoticeService {
     }
 
     @Override
-    public String dingTalkNotice(DingTalkReq dingTalk) {
+    public String dingTalkNotice(DingTalkRequest dingTalk) {
         if (Objects.isNull(dingTalk) || StringUtils.isBlank(dingTalk.getWebHook()) || StringUtils.isBlank(dingTalk.getMsgType())) {
             throw new BizServiceException(ResponseCodeEnum.ILLEGAL_ARGUMENT.getCode(), ResponseCodeEnum.ILLEGAL_ARGUMENT.getFormatMsg("钉钉的webHook地址和消息类型不能为空"));
         }
@@ -103,7 +103,7 @@ public class NoticeServiceImpl implements NoticeService {
         try {
             String webHook = dingTalk.getWebHook();
             String msgType = dingTalk.getMsgType();
-            DingTalkReq.DingTalkAt dingTalkAt = dingTalk.getAt();
+            DingTalkRequest.DingTalkAt dingTalkAt = dingTalk.getAt();
             Map<String, Object> at = MapUtil.covertObj2Map(dingTalkAt);
             switch (DingTalkMsgTypeEnum.valueOf(msgType)) {
                 case TEXT -> {
@@ -133,7 +133,7 @@ public class NoticeServiceImpl implements NoticeService {
                     }
                     Map<String, List<Map<String, Object>>> feedCard = new HashMap<>();
 
-                    List<DingTalkReq.DingTalkFeedCardLink> dingTalkFeedCardLinks = dingTalk.getFeedCard().getLinks();
+                    List<DingTalkRequest.DingTalkFeedCardLink> dingTalkFeedCardLinks = dingTalk.getFeedCard().getLinks();
                     List<Map<String, Object>> links = dingTalkFeedCardLinks.stream().map(link -> {
                         Map<String, Object> map = new HashMap<>();
                         BeanUtils.copyProperties(link, map);
@@ -154,7 +154,7 @@ public class NoticeServiceImpl implements NoticeService {
     }
 
     @Override
-    public Boolean mailNotice(MailReq email) {
+    public Boolean mailNotice(MailRequest email) {
         return mailService.sendMail(email);
     }
 }

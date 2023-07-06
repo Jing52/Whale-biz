@@ -1,6 +1,7 @@
 package com.whale.framework.message.dto.req;
 
 import com.whale.framework.common.dto.request.BaseRequest;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
@@ -17,14 +18,18 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @RequiredArgsConstructor(staticName = "of")
-public class AttachmentReq extends BaseRequest {
+@Schema
+public class AttachmentRequest extends BaseRequest {
 
     /**
      * 文件名称
      */
+    @Schema(description = "文件名称")
     private String fileName;
+
     /**
      * 文件路径
      */
+    @Schema(description = "文件路径")
     private String filePath;
 }

@@ -1,7 +1,7 @@
 package com.whale.framework.message.service.impl;
 
 import com.whale.framework.message.annotation.ExceptionNotice;
-import com.whale.framework.message.dto.req.MailReq;
+import com.whale.framework.message.dto.req.MailRequest;
 import com.whale.framework.message.service.MailService;
 import com.whale.framework.message.utils.EmailUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +35,7 @@ public class MailServiceImpl implements MailService {
     @Override
     @Async
     @ExceptionNotice
-    public Boolean sendMail(MailReq email) {
+    public Boolean sendMail(MailRequest email) {
         String from = StringUtils.isBlank(email.getFrom()) ? sysEmail : email.getFrom();
         log.info("【{}】开始向邮箱【{}】发送邮件", from, email.getTo());
         if (StringUtils.isBlank(from)) {
@@ -51,7 +51,7 @@ public class MailServiceImpl implements MailService {
     @Override
     @Async
     @ExceptionNotice
-    public Boolean sendMailWithoutAttachments(MailReq email) {
+    public Boolean sendMailWithoutAttachments(MailRequest email) {
         String from = StringUtils.isBlank(email.getFrom()) ? sysEmail : email.getFrom();
         log.info("【{}】开始向邮箱【{}】发送邮件", from, email.getTo());
         if (StringUtils.isBlank(from)) {

@@ -1,6 +1,7 @@
 package com.whale.framework.message.dto.req;
 
 import com.whale.framework.common.dto.request.BaseRequest;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,39 +17,50 @@ import java.util.List;
  * @Date: 2023/5/25 3:45 PM
  */
 @Data
-public class WxWorkReq extends BaseRequest {
+@Schema
+public class WxWorkRequest extends BaseRequest {
 
     @NotBlank
+    @Schema(description = "webHook地址")
     private String webHook;
 
     @NotBlank
+    @Schema(description = "消息类型")
     private String msgType;
 
-    private WeWorkTextReq text;
+    @Schema(description = "文本")
+    private WeWorkTextRequest text;
 
-    private WeWorkMarkDownReq markdown;
+    @Schema(description = "markdown")
+    private WeWorkMarkDownRequest markdown;
 
-    private WeWorkImageReq image;
+    @Schema(description = "图片")
+    private WeWorkImageRequest image;
 
-    private WeWorkNewsReq news;
+    @Schema(description = "卡片")
+    private WeWorkNewsRequest news;
 
     @NoArgsConstructor
     @AllArgsConstructor
     @Data
-    public static class WeWorkTextReq {
+    public static class WeWorkTextRequest {
 
+        @Schema(description = "正文")
         private String content;
 
+        @Schema(description = "@用户")
         private List<String> mentioned_list;
 
+        @Schema(description = "@手机号")
         private List<String> mentioned_mobile_list;
     }
 
     @NoArgsConstructor
     @AllArgsConstructor
     @Data
-    public static class WeWorkMarkDownReq {
+    public static class WeWorkMarkDownRequest {
 
+        @Schema(description = "正文")
         private String content;
 
     }
@@ -56,7 +68,7 @@ public class WxWorkReq extends BaseRequest {
     @NoArgsConstructor
     @AllArgsConstructor
     @Data
-    public static class WeWorkImageReq {
+    public static class WeWorkImageRequest {
 
         private String media_id;
 
@@ -65,16 +77,16 @@ public class WxWorkReq extends BaseRequest {
     @NoArgsConstructor
     @AllArgsConstructor
     @Data
-    public static class WeWorkNewsReq {
+    public static class WeWorkNewsRequest {
 
-        private List<WeWorkArticle> articles;
+        private List<WeWorkArticleRequest> articles;
 
     }
 
     @NoArgsConstructor
     @AllArgsConstructor
     @Data
-    public static class WeWorkArticle {
+    public static class WeWorkArticleRequest {
 
         private String title;
 

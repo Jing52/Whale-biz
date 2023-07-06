@@ -13,7 +13,8 @@
         <module>whale-biz-dependencies</module>
         <module>whale-biz-message</module>
         <module>whale-biz-common</module>
-        <module>whale-biz-process</module>
+        <module>whale-biz-framework</module>
+        <!--        <module>whale-biz-process</module>-->
     </modules>
 
     <properties>
@@ -27,6 +28,8 @@
         <spring-cloud.version>2022.0.0</spring-cloud.version>
         <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
         <druid-spring-boot-starter.version>1.2.12</druid-spring-boot-starter.version>
+
+        <knife4j.version>4.1.0</knife4j.version>
 
         <!-- camunda -->
         <camunda.version>7.19.0</camunda.version>
@@ -64,6 +67,13 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid-spring-boot-starter.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-dependencies</artifactId>
+                <version>${knife4j.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -94,12 +104,20 @@
             <artifactId>commons-collections4</artifactId>
             <version>4.4</version>
         </dependency>
+
         <!-- fastjson -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>2.0.34</version>
         </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.10</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -107,6 +125,21 @@
             <version>31.1-jre</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>io.swagger.core.v3</groupId>-->
+<!--            <artifactId>swagger-annotations-jakarta</artifactId>-->
+<!--            <version>2.2.8</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <!--  访问路径 ip:port/$path/doc.html -->
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-boot-starter</artifactId>-->
+<!--            <version>3.0.0</version>-->
+<!--        </dependency>-->
     </dependencies>
 
 

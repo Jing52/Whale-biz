@@ -1,8 +1,8 @@
 package com.whale.framework.message.service;
 
-import com.whale.framework.message.dto.req.DingTalkReq;
-import com.whale.framework.message.dto.req.MailReq;
-import com.whale.framework.message.dto.req.WxWorkReq;
+import com.whale.framework.message.dto.req.DingTalkRequest;
+import com.whale.framework.message.dto.req.MailRequest;
+import com.whale.framework.message.dto.req.WxWorkRequest;
 
 /**
  * @Description: 通知
@@ -16,19 +16,19 @@ public interface NoticeService {
      *
      * @param wxWork
      */
-    String wxWorkNotice(WxWorkReq wxWork);
+    String wxWorkNotice(WxWorkRequest wxWork);
 
     /**
      * 钉钉通知
      *
      * @param email
      */
-    String dingTalkNotice(DingTalkReq email);
+    String dingTalkNotice(DingTalkRequest email);
 
     /**
      * 邮件通知
      *
      * @param email
      */
-    Boolean mailNotice(MailReq email);
+    Boolean mailNotice(MailRequest email);
 }

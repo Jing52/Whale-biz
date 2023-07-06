@@ -18,7 +18,7 @@ import java.util.List;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class DingTalkReq extends BaseRequest {
+public class DingTalkRequest extends BaseRequest {
 
     @NotBlank
     private String webHook;
