@@ -11,7 +11,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Map;
 
-import static com.whale.framework.common.dto.response.ResponseCodeEnum.BIZ_PROCESS_EXCEPTION;
+import static com.whale.framework.common.dto.response.ResponseCodeEnum.BIZ_BUSINESS_EXCEPTION;
 
 
 /**
@@ -32,7 +32,7 @@ public class AssertUtil {
     public static void assertTrue(boolean expValue, String errMsg) throws BizServiceException {
         if (!expValue) {
             LoggerUtils.fmtInfo(log, errMsg);
-            throw new BizServiceException(BIZ_PROCESS_EXCEPTION.getCode(), errMsg);
+            throw new BizServiceException(BIZ_BUSINESS_EXCEPTION.getCode(), errMsg);
         }
     }
 
@@ -64,7 +64,7 @@ public class AssertUtil {
                                    String errMsg) throws BizServiceException {
         if (excepValue) {
             LoggerUtils.fmtInfo(log, errMsg);
-            throw new BizServiceException(BIZ_PROCESS_EXCEPTION.getCode(), errMsg);
+            throw new BizServiceException(BIZ_BUSINESS_EXCEPTION.getCode(), errMsg);
         }
     }
 
@@ -93,7 +93,7 @@ public class AssertUtil {
 
         if (!obj1.equals(obj2)) {
             LoggerUtils.fmtInfo(log, errMsg);
-            throw new BizServiceException(BIZ_PROCESS_EXCEPTION.getCode(), errMsg);
+            throw new BizServiceException(BIZ_BUSINESS_EXCEPTION.getCode(), errMsg);
         }
     }
 
@@ -180,7 +180,7 @@ public class AssertUtil {
                                       String errMsg) throws BizServiceException {
         if (StringUtils.isEmpty(str)) {
             LoggerUtils.fmtInfo(log, errMsg);
-            throw new BizServiceException(BIZ_PROCESS_EXCEPTION.getCode(), errMsg);
+            throw new BizServiceException(BIZ_BUSINESS_EXCEPTION.getCode(), errMsg);
         }
     }
 
@@ -212,7 +212,7 @@ public class AssertUtil {
     public static void assertNotBlank(String str, String errMsg) throws BizServiceException {
         if (StringUtils.isBlank(str)) {
             LoggerUtils.fmtInfo(log, errMsg);
-            throw new BizServiceException(BIZ_PROCESS_EXCEPTION.getCode(), errMsg);
+            throw new BizServiceException(BIZ_BUSINESS_EXCEPTION.getCode(), errMsg);
         }
     }
 
@@ -243,7 +243,7 @@ public class AssertUtil {
     public static void assertNull(Object object, String errMsg) throws BizServiceException {
         if (object != null) {
             LoggerUtils.fmtInfo(log, errMsg);
-            throw new BizServiceException(BIZ_PROCESS_EXCEPTION.getCode(), errMsg);
+            throw new BizServiceException(BIZ_BUSINESS_EXCEPTION.getCode(), errMsg);
         }
     }
 
@@ -297,7 +297,7 @@ public class AssertUtil {
     public static void assertNotNull(Object object, String errMsg) throws BizServiceException {
         if (null == object) {
             LoggerUtils.fmtInfo(log, errMsg);
-            throw new BizServiceException(BIZ_PROCESS_EXCEPTION.getCode(), errMsg);
+            throw new BizServiceException(BIZ_BUSINESS_EXCEPTION.getCode(), errMsg);
         }
     }
 
@@ -329,7 +329,7 @@ public class AssertUtil {
                                       String errMsg) throws BizServiceException {
         if (MapUtils.isEmpty(map)) {
             LoggerUtils.fmtInfo(log, errMsg);
-            throw new BizServiceException(BIZ_PROCESS_EXCEPTION.getCode(), errMsg);
+            throw new BizServiceException(BIZ_BUSINESS_EXCEPTION.getCode(), errMsg);
         }
     }
 

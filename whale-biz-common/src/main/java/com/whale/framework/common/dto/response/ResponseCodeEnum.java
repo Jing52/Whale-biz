@@ -24,7 +24,9 @@ public enum ResponseCodeEnum {
 
     // 100 ～ 199 业务自定义异常
     BIZ_COMMON_EXCEPTION("100", "业务异常: %s"),
-    BIZ_PROCESS_EXCEPTION("101", "业务处理校验异常"),
+    BIZ_BUSINESS_EXCEPTION("101", "业务处理校验异常"),
+
+
     // 600 ～ 699 数据库异常
     REPOSITORY_COMMON_EXCEPTION("300", "数据仓储层统一异常: %s"),
 
