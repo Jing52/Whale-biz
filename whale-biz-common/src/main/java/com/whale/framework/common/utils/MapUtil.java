@@ -3,8 +3,7 @@ package com.whale.framework.common.utils;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
-import com.google.common.collect.Lists;
-import com.whale.framework.common.dto.enums.TemplateDataLogicEnum;
+import com.whale.framework.common.domain.enums.TemplateDataLogicEnum;
 import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Field;

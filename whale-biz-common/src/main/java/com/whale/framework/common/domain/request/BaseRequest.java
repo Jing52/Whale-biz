@@ -1,4 +1,4 @@
-package com.whale.framework.common.dto.request;
+package com.whale.framework.common.domain.request;
 
 import lombok.Data;
 

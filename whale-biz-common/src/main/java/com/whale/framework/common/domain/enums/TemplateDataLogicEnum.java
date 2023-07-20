@@ -1,4 +1,4 @@
-package com.whale.framework.common.dto.enums;
+package com.whale.framework.common.domain.enums;
 
 /**
  * MapUtil 逻辑运算符号

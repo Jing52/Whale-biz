@@ -1,4 +1,4 @@
-package com.whale.framework.common.dto.enums;
+package com.whale.framework.common.domain.enums;
 
 import com.whale.framework.common.utils.ValidationUtil;
 import lombok.extern.slf4j.Slf4j;

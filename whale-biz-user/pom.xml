@@ -5,17 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.whale.framework</groupId>
-        <artifactId>whale-biz-message</artifactId>
+        <artifactId>whale-biz</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>whale-biz-message-client</artifactId>
+    <artifactId>whale-biz-user</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>whale-biz-user-service</module>
+        <module>whale-biz-user-client</module>
+    </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.whale.framework</groupId>
-            <artifactId>whale-biz-common</artifactId>
-            <version>${whale.biz.version}</version>
-        </dependency>
-    </dependencies>
 </project>

@@ -1,7 +1,7 @@
 package com.whale.framework.common.utils;
 
 
-import com.whale.framework.common.dto.enums.CommonCheckCodeEnum;
+import com.whale.framework.common.domain.enums.CommonCheckCodeEnum;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

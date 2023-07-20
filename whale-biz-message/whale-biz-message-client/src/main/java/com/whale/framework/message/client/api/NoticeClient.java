@@ -1,8 +1,7 @@
 package com.whale.framework.message.client.api;
 
-import com.whale.framework.common.dto.response.BaseResponse;
+import com.whale.framework.common.domain.response.BaseResponse;
 import com.whale.framework.message.client.domain.request.NoticeRequest;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 /**
@@ -14,6 +13,5 @@ import org.springframework.web.bind.annotation.RequestBody;
  */
 public interface NoticeClient {
 
-    @PostMapping()
     BaseResponse notice(@RequestBody NoticeRequest noticeReq);
 }

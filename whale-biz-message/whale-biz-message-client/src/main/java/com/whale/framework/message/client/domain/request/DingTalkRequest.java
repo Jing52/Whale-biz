@@ -1,6 +1,6 @@
 package com.whale.framework.message.client.domain.request;
 
-import com.whale.framework.common.dto.request.BaseRequest;
+import com.whale.framework.common.domain.request.BaseRequest;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;

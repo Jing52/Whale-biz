@@ -1,4 +1,4 @@
-package com.whale.framework.common.dto.response;
+package com.whale.framework.common.domain.response;
 
 public enum ResponseCodeEnum {
 

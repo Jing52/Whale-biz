@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.whale.framework</groupId>
-        <artifactId>whale-biz-message</artifactId>
+        <artifactId>whale-biz-user</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>whale-biz-message-client</artifactId>
+    <artifactId>whale-biz-user-client</artifactId>
 
     <dependencies>
         <dependency>

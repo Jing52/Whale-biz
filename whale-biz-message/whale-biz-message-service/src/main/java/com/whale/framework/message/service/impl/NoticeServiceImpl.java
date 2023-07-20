@@ -1,7 +1,7 @@
 package com.whale.framework.message.service.impl;
 
-import com.whale.framework.common.dto.exception.BizServiceException;
-import com.whale.framework.common.dto.response.ResponseCodeEnum;
+import com.whale.framework.common.domain.exception.BizServiceException;
+import com.whale.framework.common.domain.response.ResponseCodeEnum;
 import com.whale.framework.common.utils.MapUtil;
 import com.whale.framework.message.client.domain.request.DingTalkRequest;
 import com.whale.framework.message.client.domain.request.MailRequest;

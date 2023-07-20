@@ -1,4 +1,4 @@
-package com.whale.framework.common.dto.exception;
+package com.whale.framework.common.domain.exception;
 
 import lombok.Data;
 

@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.whale.framework</groupId>
-        <artifactId>whale-biz-message</artifactId>
+        <artifactId>whale-biz-user</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>whale-biz-message-service</artifactId>
+    <artifactId>whale-biz-user-service</artifactId>
 
     <dependencies>
         <dependency>
@@ -29,31 +29,6 @@
             <artifactId>whale-biz-message-client</artifactId>
             <version>${whale.biz.version}</version>
         </dependency>
-
-        <!--         邮件发送 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-mail</artifactId>
-        </dependency>
     </dependencies>
 
-    <build>
-        <finalName>${artifactId}</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.whale.framework.message.WhaleMessageApplication</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>

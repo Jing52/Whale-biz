@@ -6,7 +6,7 @@
 
     <groupId>com.whale.framework</groupId>
     <artifactId>whale-biz</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -15,10 +15,11 @@
         <module>whale-biz-framework</module>
         <module>whale-biz-message</module>
         <module>whale-biz-gateway</module>
+        <module>whale-biz-user</module>
     </modules>
 
     <properties>
-        <whale.biz.version>1.1.0-SNAPSHOT</whale.biz.version>
+        <whale.biz.version>0.0.1-SNAPSHOT</whale.biz.version>
 
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -79,10 +80,10 @@
 
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -120,11 +121,6 @@
             <version>31.1-jre</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>io.swagger.core.v3</groupId>-->
-<!--            <artifactId>swagger-annotations-jakarta</artifactId>-->
-<!--            <version>2.2.8</version>-->
-<!--        </dependency>-->
         <dependency>
             <!--  访问路径 ip:port/$path/doc.html -->
             <groupId>com.github.xiaoymin</groupId>

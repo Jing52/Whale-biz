@@ -1,7 +1,7 @@
 package com.whale.framework.message.controller;
 
-import com.whale.framework.common.dto.exception.BizServiceException;
-import com.whale.framework.common.dto.response.BaseResponse;
+import com.whale.framework.common.domain.exception.BizServiceException;
+import com.whale.framework.common.domain.response.BaseResponse;
 import com.whale.framework.message.client.api.NoticeClient;
 import com.whale.framework.message.client.domain.request.NoticeRequest;
 import com.whale.framework.message.enums.NoticeTypeEnum;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.whale.framework.common.dto.response.ResponseCodeEnum.*;
+import static com.whale.framework.common.domain.response.ResponseCodeEnum.*;
 
 /**
  * @Description: 异常通知

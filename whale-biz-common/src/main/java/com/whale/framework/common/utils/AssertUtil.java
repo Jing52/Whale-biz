@@ -1,7 +1,7 @@
 package com.whale.framework.common.utils;
 
-import com.whale.framework.common.dto.exception.BizServiceException;
-import com.whale.framework.common.dto.response.ResponseCodeEnum;
+import com.whale.framework.common.domain.exception.BizServiceException;
+import com.whale.framework.common.domain.response.ResponseCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.MapUtils;
@@ -11,7 +11,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Map;
 
-import static com.whale.framework.common.dto.response.ResponseCodeEnum.BIZ_BUSINESS_EXCEPTION;
+import static com.whale.framework.common.domain.response.ResponseCodeEnum.BIZ_BUSINESS_EXCEPTION;
 
 
 /**
